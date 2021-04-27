@@ -5,9 +5,9 @@ RUN echo 'gem: --no-document' > /usr/local/etc/gemrc && \
   echo 'locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8' | debconf-set-selections && \
   echo 'locales locales/default_environment_locale select en_US.UTF-8' | debconf-set-selections
 
-ENV RUBY_MAJOR_MINOR_VERSION 2.4
-ENV RUBY_VERSION 2.4.0
-ENV RUBY_TARBALL_SHA512 bef7bb53f63fb74073d071cc125fb67b273ed0779ef43c2d2969089b9ca21fff1bd012281c5b748f7a3c24dd26e71730d7248c05a01cb23ab2089eb4d02115fe
+ENV RUBY_MAJOR_MINOR_VERSION 2.7
+ENV RUBY_VERSION 2.7.3
+ENV RUBY_TARBALL_SHA512 e9236138be3e61380140f2e0d42f8fb82ad8f5219d454de2f6c2ec546bb208acc8b0f2020f23e6446660d2b3b9ae873cdd8298471f166a5f1efba8e80b05e746
 ENV GEM_HOME /usr/local/lib/ruby/gems/${RUBY_MAJOR_MINOR_VERSION}.0
 ENV LANG en_US.UTF-8
 
